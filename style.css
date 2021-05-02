@@ -9,44 +9,59 @@ body {
   background-color:	#FFFFE0;
 }
 
+*:focus {
+  outline: none;
+}
+
 .header{
   color: #6495ED;
   font-size: 30px;
   font-weight: bold;
   padding: 40px;
+  padding-left: 30%;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .content{
-  padding: 45px;
+  padding: 30px;
 }
 
 .todo_form{
   font-size: 15px;
-  width: 100%;
+  width: 95%;
   height: 70px;
-  background-color: #6495ED;
+  
   display: flex;
   align-items: center;
   padding: 20px;
+  margin: 0 auto;
 }
 
 #todo_input {
-  width: 90%;
+  border: 5px solid #6495ED;
+  width: 95%;
   height: 45px;
   font-size: 15px;
   padding: 10px;
 }
 
 #add_button {
-  width: 10%;
+  background-color: #6495ED;
+  width: 5%;
   height: 45px;
   font-size: 15px;
   padding: 10px;
-  margin-left: 15px
+  margin-left: 15px;
+  border-radius: 20px;
 }
 
+section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+}
 .title{
   color: #6495ED;
   font-size: 20px;
@@ -54,20 +69,22 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
-  margin: 20px;
 }
 
 .todo_list{
   display: flex;
   font-size: 15px;
-  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
 ul{
   list-style: none;
+  padding: 20px;
 }
 
 .delete_button{
   background-color: #6495ED;
   margin-left: 10px;
+  border-radius: 20px;
 }
