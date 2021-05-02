@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!--원하는 제목을 입력해보세요--></title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-  </body>
-  <script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet" />
+        <title>TO-DO LIST</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 class="title">바닐라 자바스트립트를 사용한 TO-DO APP</h1>
+        <div class="container">
+            <form class="todo_list">
+                <input type="text" id="input" placeholder="오늘 할 일을 입력하세요!" onkeyup="EnterPress()" />
+                <button type="submit" id="list_button">추가</button>
+            </form>
+            <section>
+                <p class="list_title">TO-DO LIST</p>
+                <ul id="add_list"></ul>
+            </section>
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>
