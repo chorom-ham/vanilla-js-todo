@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!--원하는 제목을 입력해보세요--></title>
+    <title>To-do-list</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class = "header">
+      <div id = "headerText">To Do List</div>
+    </header>
+    <div class = "container">
+      <form class = "inputBar">
+        <input id="newItem" type = "text" placeholder="할 일을 입력하세요" onkeydown="checkEnter();"/>
+        <button id="addButton" type="submit" onclick="addList();">추가</button>
+      </form>
+      <div class = "content">
+        <p id ="contentHeader">할 일 목록</p>
+        <ol id = "list">
+          <!-- <li class = "line">
+            <span class = "item" style="text-decoration: none;" onclick="toggleLine(this.parent)">alsk</span>
+            <button class="deleteButton" onclick="deleteItem(this);">X</button>
+          </li> -->
+        </ol>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
