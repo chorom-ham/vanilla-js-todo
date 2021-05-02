@@ -6,51 +6,55 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: #FFDF6F;
+  background-color:	#FFFFE0;
 }
 
 .header{
-  color: #666666;
-  font-size: 20px;
-  padding-left: 40px;
+  color: #6495ED;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 40px;
   display: flex;
   align-items: center;
 }
 
 .content{
-  padding: 40px
+  padding: 45px;
 }
 
 .todo_form{
   font-size: 15px;
   width: 100%;
-  height: 60px;
-  background-color:#666666;
+  height: 70px;
+  background-color: #6495ED;
   display: flex;
   align-items: center;
   padding: 20px;
 }
 
 #todo_input {
-  width: 80%;
-  height: 50px;
-  font-size: 20px;
+  width: 90%;
+  height: 45px;
+  font-size: 15px;
   padding: 10px;
 }
 
 #add_button {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
+  width: 10%;
+  height: 45px;
+  font-size: 15px;
   padding: 10px;
+  margin-left: 15px
 }
 
 .title{
+  color: #6495ED;
   font-size: 20px;
+  font-weight: bold;
   height: 50px;
   display: flex;
   align-items: center;
-  padding: 20px;
+  margin: 20px;
 }
 
 .todo_list{
@@ -60,6 +64,6 @@ body {
 }
 
 .delete_button{
-  background-color: #666666;
+  background-color: #6495ED;
   margin-left: 10px;
 }
