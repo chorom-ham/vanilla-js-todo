@@ -2,12 +2,14 @@ const List = document.querySelector('#add_list');
 const Input = document.querySelector('#input');
 const Form = document.querySelector('form.todo_list');
 
+//엔터 눌러서 입력
 function EnterPress() {
     if (event.keycode === 13) {
         add_list();
     }
 }
 
+//toggle시 가운데 줄 긋고 폰트 회색으로 변경
 function toggle_line(event) {
     const target = event.target;
     if (target.style.textDecoration !== 'line-through') {
@@ -19,12 +21,14 @@ function toggle_line(event) {
     }
 }
 
+//list delete
 function delete_list(event) {
     const target = event.target;
     const list = target.parentNode;
     List.removeChild(list);
 }
 
+//list add
 function add_list() {
     if (Input.value) {
         const new_li = document.createElement('li');

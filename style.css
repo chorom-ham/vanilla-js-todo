@@ -4,6 +4,7 @@ body {
     background-color: #e2f0d1;
 }
 
+/*전체*/
 * {
     box-sizing: border-box;
     font-family: 'Do Hyeon', sans-serif;
@@ -25,6 +26,7 @@ body {
     background-color: rgb(5, 71, 3);
 }
 
+/*제목*/
 .title {
     background-color: rgb(5, 71, 3);
     color: ivory;
@@ -47,6 +49,7 @@ body {
     background-color: #cccfbc;
 }
 
+/*추가 button*/
 #list_button {
     width: 10%;
     height: 100%;
@@ -57,6 +60,7 @@ body {
     font-weight: bold;
 }
 
+/*delete button*/
 .deleteButton {
     background-color: rgb(5, 71, 3);
     margin-left: 8px;
