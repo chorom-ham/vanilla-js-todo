@@ -11,8 +11,10 @@ function deleteTodo(event){
 
 function toggleTodo(event){
     let target = event.target;
-    if (target.style.textDecoration != "line-through")
+    if(target.style.textDecoration !== "line-through"){
         target.style.textDecoration = "line-through";
+        alert("수고하셨습니다!");
+    }
     else
         target.style.textDecoration = "none";
 }
