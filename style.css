@@ -6,4 +6,60 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
+  background-color: #FFDF6F;
+}
+
+.header{
+  color: #666666;
+  font-size: 20px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.content{
+  padding: 40px
+}
+
+.todo_form{
+  font-size: 15px;
+  width: 100%;
+  height: 60px;
+  background-color:#666666;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#todo_input {
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#add_button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.title{
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.todo_list{
+  display: flex;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.delete_button{
+  background-color: #666666;
+  margin-left: 10px;
 }
