@@ -63,6 +63,10 @@ body {
   padding: 20px;
 }
 
+ul{
+  list-style: none;
+}
+
 .delete_button{
   background-color: #6495ED;
   margin-left: 10px;

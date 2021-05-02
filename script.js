@@ -11,7 +11,10 @@ function deleteTodo(event){
 
 function toggleTodo(event){
     let target = event.target;
-    target.style.textDecoration = "line-through";
+    if (target.style.textDecoration != "line-through")
+        target.style.textDecoration = "line-through";
+    else
+        target.style.textDecoration = "none";
 }
 
 function addInput(){
