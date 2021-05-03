@@ -28,7 +28,7 @@ function delete_list(event) {
     List.removeChild(list);
 }
 
-//list add
+//list add (if 수정)
 function add_list() {
     if (Input.value !== '') {
         const new_li = document.createElement('li');
