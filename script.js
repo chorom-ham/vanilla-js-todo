@@ -2,7 +2,10 @@ var button = document.getElementById("enter");
 var input_data = document.getElementById("input_text");
 var ul = document.querySelector("ul");
 
-function deleteList() {}
+function deleteList(EVENT) {
+  const btnLi = event.target.parentElement;
+  btnLi.remove(btnLi.id);
+}
 
 function clickInput() {
   const input_text = input_data.value;
