@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!--원하는 제목을 입력해보세요--></title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-  </body>
-  <script src="script.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    To Do
+  </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="box">
+    <div class="input">
+      <input type="text" placeholder="할 일을 입력하세요." id='input_text'><input type="button" value="입력"
+        onclick="clickInput()"><br>
+    </div>
+    <ul id="task-list">
+    </ul>
+  </div>
+</body>
+<script src="script.js"></script>
+
 </html>
