@@ -52,6 +52,8 @@ body {
   width: 5%;
   height: 45px;
   font-size: 15px;
+  font-weight: bold;
+  color: #FFFFE0;
   padding: 10px;
   margin-left: 15px;
   border-radius: 20px;
@@ -72,8 +74,8 @@ section{
 }
 
 .todo_list{
-  display: flex;
   font-size: 15px;
+  font-weight: bold;
   display: flex;
   align-items: center;
 }
@@ -84,6 +86,8 @@ ul{
 }
 
 .delete_button{
+  font-weight: bold;
+  color: #FFFFE0;
   background-color: #6495ED;
   margin-left: 10px;
   border-radius: 20px;
