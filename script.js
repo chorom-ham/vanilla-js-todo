@@ -29,4 +29,11 @@ function clickInput() {
   }
 }
 
+function checkKey(event) {
+  if (event.keyCode === 13) {
+    clickInput();
+  }
+}
+
 button.addEventListener("click", clickInput);
+input_data.addEventListener("keypress", checkKey);
