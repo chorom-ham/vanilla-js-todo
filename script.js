@@ -2,6 +2,10 @@ var button = document.getElementById("enter");
 var input_data = document.getElementById("input_text");
 var ul = document.querySelector("ul");
 
+ul.onclick = function (event) {
+  event.target.classList.toggle("done");
+};
+
 function deleteList(EVENT) {
   const btnLi = event.target.parentElement;
   btnLi.remove(btnLi.id);
