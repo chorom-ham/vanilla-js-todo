@@ -1,6 +1,6 @@
 let todoForm = document.querySelector('.todo_form');
 let addButton = document.getElementById('add_button');
-let todoInput = document.getElementById('todo_input');
+const todoInput = document.getElementById('todo_input');
 let todoList = document.getElementById('todo_list');
 
 function deleteTodo(event){
@@ -20,7 +20,7 @@ function toggleTodo(event){
 }
 
 function addInput(){
-    if (todoInput.value != null){
+    if (todoInput.value !== ''){
         let list = document.createElement("li");
 
         let deleteButton = document.createElement("button");
@@ -36,7 +36,7 @@ function addInput(){
         deleteButton.addEventListener('click', deleteTodo);
         span.addEventListener('click', toggleTodo);
 
-        todoInput.value = "";
+        todoInput.value = '';
     }
 }
 
