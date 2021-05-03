@@ -2,7 +2,7 @@ const List = document.querySelector('#add_list');
 const Input = document.querySelector('#input');
 const Form = document.querySelector('form.todo_list');
 
-//엔터 눌러서 입력
+//엔터 입력 시 추가
 function EnterPress() {
     if (event.keycode === 13) {
         add_list();
