@@ -30,7 +30,7 @@ function delete_list(event) {
 
 //list add
 function add_list() {
-    if (Input.value) {
+    if (Input.value !== '') {
         const new_li = document.createElement('li');
         new_li.className = 'li_elem';
         const delete_button = document.createElement('button');
