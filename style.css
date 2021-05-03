@@ -7,3 +7,37 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.input input {
+  margin-left: 5px;
+  width: 70%;
+}
+
+#title {
+  padding: 10px;
+  background-color: forestgreen;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#task-list {
+  list-style: none;
+  padding-left: 15px;
+  color: darkgreen;
+}
+
+#list-title {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10px;
+}
