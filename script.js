@@ -19,7 +19,7 @@ function toggleTodo(event){
         target.style.textDecoration = "none";
 }
 
-function addInput(){
+function addTodo(){
     if (todoInput.value !== ''){
         let list = document.createElement("li");
 
@@ -43,11 +43,11 @@ function addInput(){
 function addTodoWhenEnterPress(){
     // enterkey 눌렀을 때
     if(window.event.keyCode == 13){
-        addInput();
+        addTodo();
     }
 }
 
 todoForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    addInput();
+    addTodo();
 });
