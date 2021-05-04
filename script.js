@@ -40,8 +40,9 @@ function addInput(){
     }
 }
 
-function addHandler(){
-    if(window.event.keyCode == 13){    // enterkey 눌렀을 때
+function addTodoWhenEnterPress(){
+    // enterkey 눌렀을 때
+    if(window.event.keyCode == 13){
         addInput();
     }
 }
