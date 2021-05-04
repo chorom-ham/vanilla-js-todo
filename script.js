@@ -2,6 +2,7 @@ var inputBox = document.querySelector("#inputBox");
 var AddBtn = document.querySelector("#addButton");
 var ToDoList = document.querySelector("#existList");
 
+//할 일 추가
 function addNewToDo() {
   var newToDo = document.createElement("li");
   newToDo.innerHTML = inputBox.value;
@@ -17,3 +18,15 @@ function enterKey() {
 }
 
 AddBtn.addEventListener("click", addNewToDo);
+
+//완료한 할 일에 취소선 긋기
+var itemList = document.querySelector("ul");
+itemList.addEventListener(
+  "click",
+  function (event) {
+    if (event.target.tagName === "LI") {
+      event.target.classList.toggle("checked");
+    }
+  },
+  false
+);

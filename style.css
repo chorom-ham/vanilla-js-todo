@@ -71,6 +71,10 @@ body {
   font-size: 20px;
 }
 
+ul li.checked {
+  text-decoration: line-through;
+}
+
 #deleteBtn {
   background-color: none;
   border: none;
