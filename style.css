@@ -76,6 +76,6 @@ ul li.checked {
 }
 
 #deleteBtn {
-  background-color: none;
+  background-color: pink;
   border: none;
 }

@@ -1,14 +1,19 @@
 var inputBox = document.querySelector("#inputBox");
 var AddBtn = document.querySelector("#addButton");
 var ToDoList = document.querySelector("#existList");
+var cnt = 1;
 
 //할 일 추가
 function addNewToDo() {
+  var deleteBtn = document.createElement("button");
+  deleteBtn.innerText = "❌";
+  deleteBtn.id = "deleteBtn";
   var newToDo = document.createElement("li");
   newToDo.innerHTML = inputBox.value;
-  newToDo.innerHTML +=
-    "<button id = 'deleteBtn' type = 'button' onclick = 'remove' style = 'background-color: pink'> ❌</button>";
+  newToDo.id = "li" + cnt;
+  newToDo.append(deleteBtn);
   existList.append(newToDo);
+  cnt++;
 }
 
 function enterKey() {
@@ -30,3 +35,9 @@ itemList.addEventListener(
   },
   false
 );
+
+//❌ 버튼 누르면 삭제하기
+deleteBtn.onclick = function deleteToDo(event) {
+  var li = document.getElementById("li" + event.target.id.slice(9));
+  existList.remove(li);
+};
