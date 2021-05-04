@@ -2,11 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&amp;family=Noto+Sans+KR&amp;display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><!--원하는 제목을 입력해보세요--></title>
+    <title>🍦 TO DO 🍦</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <div id="titleBox">
+      <h3>🍭 바닐라 자바스크립트를 사용한 TO-DO APP 🍭</h3>
+    </div>
+    <div id="bigBox">
+      <div id="inputButtonBox">
+        <input type="text" id="inputBox" placeholder="할 일을 입력하세요" onkeyup = "enterKey();"/>
+        <button type="button" id="addButton">추가</button>
+    </div>
+
+    <div id = "ToDoList">
+        <h2>📚 할 일 목록</h2>
+        <ul id="existList">
+      </ul>
+    </div>
+
   </body>
   <script src="script.js"></script>
 </html>
