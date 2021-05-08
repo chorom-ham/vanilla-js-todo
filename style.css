@@ -71,11 +71,23 @@ body {
   font-size: 20px;
 }
 
+#existList:hover {
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
+}
+
+#addButton:hover {
+  cursor: pointer;
+}
+
 ul li.checked {
   text-decoration: line-through;
 }
 
-#deleteBtn {
+.deleteBtn {
   background-color: pink;
   border: none;
 }

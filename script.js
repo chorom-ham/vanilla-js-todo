@@ -1,19 +1,21 @@
 var inputBox = document.querySelector("#inputBox");
 var AddBtn = document.querySelector("#addButton");
 var ToDoList = document.querySelector("#existList");
-var cnt = 1;
+var numberOfToDo = 1; //
 
 //할 일 추가
 function addNewToDo() {
   var deleteBtn = document.createElement("button");
   deleteBtn.innerText = "❌";
-  deleteBtn.id = "deleteBtn";
+  deleteBtn.className = "deleteBtn";
+  deleteBtn.id = "deleteBtn" + numberOfToDo;
   var newToDo = document.createElement("li");
   newToDo.innerHTML = inputBox.value;
-  newToDo.id = "li" + cnt;
+  inputBox.value = "";
+  newToDo.id = "li" + numberOfToDo;
   newToDo.append(deleteBtn);
   existList.append(newToDo);
-  cnt++;
+  numberOfToDo++;
 }
 
 function enterKey() {
@@ -25,19 +27,19 @@ function enterKey() {
 AddBtn.addEventListener("click", addNewToDo);
 
 //취소선 긋기
+function drawCancelLine(event) {
+  if (event.target.tagName == "LI") {
+    event.target.classList.toggle("checked");
+  }
+}
+
 var itemList = document.querySelector("ul");
-itemList.addEventListener(
-  "click",
-  function (event) {
-    if (event.target.tagName === "LI") {
-      event.target.classList.toggle("checked");
-    }
-  },
-  false
-);
+itemList.addEventListener("click", drawCancelLine);
 
 // X 누르면 할 일 삭제
-deleteBtn.onclick = function deleteToDo(event) {
-  var li = document.getElementById("li" + event.target.id.slice(9));
-  existList.remove(li);
-};
+function deleteTodo(event) {
+  var deleteList = event.target.parentNode;
+  existList.removeChild(deleteList);
+}
+
+existList.addEventListener("click", deleteTodo);
