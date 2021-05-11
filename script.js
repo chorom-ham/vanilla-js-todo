@@ -1,16 +1,17 @@
-const List = document.querySelector('#add_list');
+//const 설정
+const List = document.querySelector('#addList');
 const Input = document.querySelector('#input');
-const Form = document.querySelector('form.todo_list');
+const Form = document.querySelector('form.todo-list');
 
 //엔터 입력 시 추가
 function EnterPress() {
     if (event.keycode === 13) {
-        add_list();
+        addList();
     }
 }
 
 //toggle시 가운데 줄 긋고 폰트 회색으로 변경
-function toggle_line(event) {
+function toggleLine(event) {
     const target = event.target;
     if (target.style.textDecoration !== 'line-through') {
         target.style.textDecoration = 'line-through';
@@ -22,33 +23,33 @@ function toggle_line(event) {
 }
 
 //list delete
-function delete_list(event) {
+function deleteList(event) {
     const target = event.target;
     const list = target.parentNode;
     List.removeChild(list);
 }
 
-//list add (if 수정)
-function add_list() {
+//list add
+function addList() {
     if (Input.value !== '') {
-        const new_li = document.createElement('li');
-        new_li.className = 'li_elem';
-        const delete_button = document.createElement('button');
-        delete_button.className = 'deleteButton';
-        delete_button.innerText = 'X';
-        const elem = document.createElement('elem');
-        elem.innerText = Input.value;
-        new_li.appendChild(elem);
-        new_li.appendChild(delete_button);
-        List.appendChild(new_li);
+        const newList = document.createElement('li');
+        newList.className = 'listElement';
+        const deleteButton = document.createElement('button');
+        deleteButton.className = 'deleteButton';
+        deleteButton.innerText = 'X';
+        const element = document.createElement('element');
+        element.innerText = Input.value;
+        newList.appendChild(element);
+        newList.appendChild(deleteButton);
+        List.appendChild(newList);
 
-        delete_button.addEventListener('click', delete_list);
-        elem.addEventListener('click', toggle_line);
+        deleteButton.addEventListener('click', deleteList);
+        element.addEventListener('click', toggleLine);
         Input.value = '';
     }
 }
 
 Form.addEventListener('submit', (event) => {
     event.preventDefault();
-    add_list();
+    addList();
 });
