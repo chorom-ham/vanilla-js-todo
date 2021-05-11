@@ -10,7 +10,7 @@ function EnterPress() {
     }
 }
 
-//toggle시 가운데 줄 긋고 폰트 회색으로 변경
+//toggle시 가운데 줄,  폰트 회색으로 변경
 function toggleLine(event) {
     const target = event.target;
     if (target.style.textDecoration !== 'line-through') {
