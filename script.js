@@ -10,12 +10,14 @@ function addNewToDo() {
   deleteBtn.className = "deleteBtn";
   deleteBtn.id = "deleteBtn" + numberOfToDo;
   var newToDo = document.createElement("li");
-  newToDo.innerHTML = inputBox.value;
-  inputBox.value = "";
-  newToDo.id = "li" + numberOfToDo;
-  newToDo.append(deleteBtn);
-  existList.append(newToDo);
-  numberOfToDo++;
+  if (inputBox.value != "") {
+    newToDo.innerHTML = inputBox.value;
+    inputBox.value = "";
+    newToDo.id = "li" + numberOfToDo;
+    newToDo.append(deleteBtn);
+    existList.append(newToDo);
+    numberOfToDo++;
+  }
 }
 
 function enterKey() {
